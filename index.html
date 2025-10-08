@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Travel Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>💜 Smart Travel Planner 💛</h1>
+
+<div class="section">
+    <label for="citySelect">Choose a City:</label>
+    <select id="citySelect"></select>
+</div>
+
+<div class="section" id="cityImage"></div>
+
+<div class="section">
+    <h3>Destinations / Attractions</h3>
+    <div id="destinations"></div>
+</div>
+
+<div class="section">
+    <label for="cuisineSelect">Choose Cuisine:</label>
+    <select id="cuisineSelect"></select>
+</div>
+
+<div class="section">
+    <label for="hotelSelect">Choose Hotel:</label>
+    <select id="hotelSelect"></select>
+    <label for="rooms">Number of Rooms:</label>
+    <input type="number" id="rooms" value="1" min="1">
+</div>
+
+<div class="section">
+    <label for="travelSelect">Travel Class:</label>
+    <select id="travelSelect"></select>
+    <label for="travelers">Number of Travelers:</label>
+    <input type="number" id="travelers" value="1" min="1">
+</div>
+
+<div class="section">
+    <label for="days">Number of Days:</label>
+    <input type="number" id="days" value="1" min="1">
+</div>
+
+<div class="section">
+    <button onclick="calculatePlan()">Calculate Trip</button>
+</div>
+
+<div class="section" id="planSummary"></div>
+<div class="section" id="costBreakdown"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
